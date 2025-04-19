@@ -69,11 +69,11 @@ public class DataAdapter extends BaseAdapter{
 			viewHolder = (ViewHolder)convertView.getTag();
 		}
 		
-		viewHolder.lat.setText(String.format("%f",listGps.get(position).getLatitude()));
-		viewHolder.lon.setText(String.format("%f",listGps.get(position).getLongitude()));
-		viewHolder.high.setText(String.format("%f",listGps.get(position).getHigh()));
-		viewHolder.direct.setText(String.format("%f",listGps.get(position).getDirect()));
-		viewHolder.speed.setText(String.format("%f",listGps.get(position).getSpeed()));
+		viewHolder.lat.setText(String.format("% -11.8f",listGps.get(position).getLatitude()));
+		viewHolder.lon.setText(String.format("% -12.8f",listGps.get(position).getLongitude()));
+		viewHolder.high.setText(String.format("% -7.3f",listGps.get(position).getHigh()));
+		viewHolder.direct.setText(String.format("% 5.2f",listGps.get(position).getDirect()));
+		viewHolder.speed.setText(String.format("%-4.1f",listGps.get(position).getSpeed()));
 		viewHolder.time.setText(listGps.get(position).getGpsTime());
 		viewHolder.descript.setText(listGps.get(position).getDescription());
 		if(dataSwitch){

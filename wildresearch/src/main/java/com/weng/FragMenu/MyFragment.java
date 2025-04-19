@@ -28,7 +28,7 @@ import com.weng.gpstools.SettingActivity;
 
 
 
-public class AboutFragment extends Fragment implements View.OnClickListener,TestDialog.onTestListener {
+public class MyFragment extends Fragment implements View.OnClickListener,TestDialog.onTestListener {
 
     private String mstrName = "";
     private String mstrHigh = "";

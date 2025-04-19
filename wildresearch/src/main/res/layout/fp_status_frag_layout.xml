@@ -31,7 +31,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
-                android:text="@string/title"
+                android:text="@string/status_fraq_title"
                 android:textColor="@color/white"/>
 
         <Button

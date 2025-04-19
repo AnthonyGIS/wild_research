@@ -5,7 +5,7 @@
 
     <fragment
             android:id="@+id/fragement_status"
-            android:name="com.weng.FragMenu.Status_Fragment"
+            android:name="com.weng.FragMenu.StatusFragment"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1" tools:layout="@layout/fp_status_frag_layout"/>
@@ -35,7 +35,7 @@
 
     <fragment
             android:id="@+id/fragement_my"
-            android:name="com.weng.FragMenu.AboutFragment"
+            android:name="com.weng.FragMenu.MyFragment"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1"/>

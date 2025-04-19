@@ -2,7 +2,8 @@
 <resources>
 
     <string name="app_name">Wildfield R.</string>
-    <string name="title">GPS Tools</string>
+    <string name="status_fraq_title">status of sensors</string>
+    <string name="export_dlg_title">status data export</string>
     <string name="exit">退出</string>
     <string name="edit">记录</string>
     <string name="back">返回</string>
