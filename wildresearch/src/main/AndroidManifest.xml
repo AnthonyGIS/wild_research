@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+<!--
+    解决方案 把manifest.xml 里的sdk最小版本设置都删掉 Androidstudio3.0 以后 不能在manifest.xml 设置这些 必须在 gradle里设置
+    REF:
+    https://blog.csdn.net/yuge8930/article/details/85336450
+    <uses-sdk android:minSdkVersion="7" />
+-->
+
+    <application
+        android:icon="@drawable/luncher_wild_r"
+        android:label="@string/app_name" >
+
+        <activity
+            android:name="com.weng.WildResearch.MainActivity"
+            android:label="@string/app_name"
+            android:exported="true"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.weng.Login.login_f1"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.weng.gpstools.DataListActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.weng.gpstools.SettingActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.weng.gpstools.FeedbackActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.weng.gpstools.HelpActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+    </application>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    
+</manifest>

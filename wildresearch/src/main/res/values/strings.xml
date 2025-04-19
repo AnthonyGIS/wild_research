@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Wildfield R.</string>
+    <string name="title">GPS Tools</string>
+    <string name="exit">退出</string>
+    <string name="edit">记录</string>
+    <string name="back">返回</string>
+    <string name="export">导出</string>
+    <string name="previousPage">上一页</string>
+    <string name="nextPage">下一页</string>
+    <string name="swith">数据切换</string>
+
+    <string name="latitude">纬度</string>
+    <string name="longitude">经度</string>
+    <string name="high">海拔</string>
+    <string name="direct">方向</string>
+    <string name="speed">速度</string>
+    <string name="time">时间</string>
+    <string name="descript">描述</string>
+    <string name="gps_time">时间</string>
+    <string name="gps_type">类型</string>
+    <string name="db_status">DB</string>
+
+
+    <string name="setting">设置</string>
+    <string name="help">帮助</string>
+    <string name="help_title">使用帮助</string>
+    <string name="feedback">反馈</string>
+    <string name="save">保存</string>
+
+    <string name="description">描述信息</string>
+    <string name="gps_edit">POI点记录</string>
+    <string name="alert_dialog_ok">确认</string>
+    <string name="alert_dialog_cancel">取消</string>
+
+    <string name="userfeedback">用户反馈</string>
+    <string name="send">发送</string>
+    <string name="user_mail_addres">请在此留下您的邮箱,以便与您取得联系！</string>
+    <string name="user_feedback_content">请在这里输入反馈信息,欢迎一针见血的评论。\n\n您也可以发邮件至: \n<u>sunlabs@126.com</u></string>
+    <string name="smtp">smtp.126.com</string>
+    <string name="port">25</string>
+    <string name="pop">pop.126.com</string>
+    <string name="imap">imap.126.com</string>
+    <string name="account">dev_hhch@126.com</string>
+    <string name="pwd">hhch2016</string>
+    <string name="mail_subject">GPS TOOLS FEEDBACK</string>
+    <string name="mailto">sunlabs@126.com</string>
+    <string name="scuess">邮件发送成功,感谢您的支持！</string>
+    <string name="fail">邮件发送失败,请检查网络是否畅通,或以其他途径联系作者，感谢您的支持！</string>
+    <string name="clear">是否确认删除历史采集的数据,删除前务必先导出数据,请谨慎操纵！</string>
+
+
+
+
+
+    <string name="help_1">前言：</string>
+    <string name="help_1_detail">GPS数据在做GIS开发时的一份宝贵的数据，在不侵犯他人隐私的情况下通过互联网的模式收集GPS是成本最为低廉的一种模式。</string>
+
+    <string name="help_2">背景：</string>
+    <string name="help_2_detail">
+        现在公司在做一个项目，接触到一些有关导航，地图等。而其中比较重要的是GPS数据，公司在GPS数据采购上平均每年都会花费数百万。\n
+        如果说有些数据花钱能够买到的话那么到还好至少是一条获取数据的途径，然而一些试验局的项目数据只能通过自己去采集，你需要开着专业测绘车以及其他设备到每个指定的地点进行数据的采集工作。\n
+        通常试验局的规模不大数据量也不会很大，数据的要求也不会太高在这种情况下我就自主研发了一款工具软件来解决我实际工作中所遇到的问题。
+    </string>
+
+    <string name="help_3">需求：</string>
+    <string name="help_3_detail">
+        实现每1秒或者每移动1米存储一份GPS数据，每天的数据量为1440条，那么每年的数据量为525600条。\n
+        实现手动的定位GPS数据存储功能，手动数据要求可以编辑，可以添加数据的描述信息。\n
+        以上是工作过程当中是遇到需求，其实还包含了一些隐性的需求没被提及但是在我的第一个版本中就包含了很多隐性的需求。如：采集数据的显示，导出等等。</string>
+
+    <string name="help_4">目的：</string>
+    <string name="help_4_detail">编写此应用的目的是实地测量当地城市公交站点的GPS数据。</string>
+
+    <string name="help_5">解决方案：</string>
+    <string name="help_5_detail">
+        原本打算使用高德地图的geocoder功能获取GPS数据的考虑的他有AGPS定位的功能,但是同时没法保证其的定位数据的原始性.
+        担心其数据是做过处理的所以果断的抉择了原始的GPS定位数据，虽然原始功能不带AGPS定位功能。\n
+        由于我们的测量工作都是户外基于这种场景完全可以使用原始的GPS定位功能。\n\n
+        基于需求的两种模式，可以分别存储两张表一张用于存储动态的GPS数据，另外一张用于存储手动的定位数据。\n
+        数据表结构唯一的区别在于后者多一个描述信息的字段，用于存储其的描述信息添加一个编辑的功能。</string>
+
+    <string name="help_6">发布日志：</string>
+    <string name="help_6_detail">
+        v0.2 Wildfield Research 2017.8.13\n
+        -------------------------------------------------\n
+        一些系统的美化，及菜单弹出功能的bug修复。使得程序更加好用。\n\n\n\n\n\n
+
+
+
+        v0.1 gpstools-droid 2013.5.30\n
+        -------------------------------------------------\n
+        > GPS数据自动采集，手动采集两种数据采集方式，其中手动采集支持添加描述信息。自动采集数据时位置未发生偏移不采集重复数据。\n
+        > GPS数据采集数据的展示功能，提供分页显示。\n
+        > GPS数据的导出，支持XML,CSV两种格式导出至/sdcard/gpstools/目录下。\n
+        > 系统设置功能，可以有选择的删选导出格式，分页数，以及清空历史数据。\n
+        > 用户手册功能，让用户熟知此软件的背景，方便其进一步的了解此软件。\n
+        > 提供用户反馈的功能，方便作者收集反馈信息在下个版本中再予以跟新。（这个功能我不知道有多少用户愿意用，出发点还是希望有用户提供宝贵意见）
+    </string>
+
+    <string name="help_7">有关作者：</string>
+    <string name="help_7_detail">
+        Weng Youth\n
+        Android 初学者，希望借助原作者打下的基础，能够将这款软件做的更好用，能够帮助更多的人!\n
+        QQ 1361956733,欢迎探讨与讨论。\n\n\n
+
+
+        原V0.1版本作者信息：\n
+        本应用为免费开源项目源码均在 sourceforge.net 上进行托管，链接地址 https://sourceforge.net/projects/gpstools-droid/
+        小小程序员一枚，专注移动开发。关注领域智能交通，移动通讯，物联网等。\n
+        > 热爱手指在键盘上跳舞的感觉，朋友们都叫我键盘动物。\n
+        > 新浪微博：键盘动物CodeMonkey ( fangqing.fan@hotmail.com) \n
+    </string>
+    <string name="bottom_title_news_string">GPS状态</string>
+    <string name="bottom_title_read_string">阅读</string>
+    <string name="bottom_title_video_string">视听</string>
+    <string name="bottom_title_lamp_string">发现</string>
+    <string name="bottom_title_pc_string">我</string>
+    <string name="action_settings">setting</string>
+
+
+</resources>

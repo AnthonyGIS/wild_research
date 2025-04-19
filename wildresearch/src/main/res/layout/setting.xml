@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <PreferenceCategory android:title="分页设置"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <ListPreference
+            android:dialogTitle="选择每页数据量"
+            android:entries="@array/page_size_info"
+            android:entryValues="@array/page_size"
+            android:key="page_size_preference"
+            android:summary="数据展示时页面所展示的数据量"
+            android:title="分页数"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="数据导出设置">
+
+        <CheckBoxPreference
+            android:key="export_xml_preference"
+            android:summary="以xml文件的模式导出到文件"
+            android:title="导出xml" />
+
+        <CheckBoxPreference
+            android:key="export_csv_preference"
+            android:summary="以csv文件的模式导出到文件"
+            android:title="导出csv" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="数据清空设置">
+
+        <com.fanfq.gpstools.MyPreference
+            android:key="clear_preference"
+            android:summary="清除历史采集数据"
+            android:title="清空历史数据" />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
+
+
+

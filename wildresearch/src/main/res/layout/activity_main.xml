@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/fragement_news"
+        android:name="com.weng.FragMenu.GPS_Main_Fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <fragment
+        android:id="@+id/fragement_read"
+        android:name="com.weng.FragMenu.ReadFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <fragment
+        android:id="@+id/fragement_video"
+        android:name="com.weng.FragMenu.MediaFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <fragment
+        android:id="@+id/fragement_lamp"
+        android:name="com.weng.FragMenu.DiscoveryFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <fragment
+        android:id="@+id/fragement_pc"
+        android:name="com.weng.FragMenu.AboutFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <include layout="@layout/bottom_title_layout"/>
+
+</LinearLayout>
