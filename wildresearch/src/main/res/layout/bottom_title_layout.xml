@@ -1,132 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_weight="0">
+              android:orientation="horizontal" android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="0">
 
     <!--GPS Status-->
     <LinearLayout
-        android:id="@+id/bottom_status_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_weight="1">
-
-        <ImageButton
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:duplicateParentState="true"
-            android:clickable="false"
-            android:scaleType="fitXY"
-            android:background="@drawable/news_selector_background" />
-        <TextView
+            android:id="@+id/bottom_status_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:duplicateParentState="true"
-            android:clickable="false"
-            android:text="@string/bottom_title_status"
-            android:textColor="@color/bottom_title_text_color"/>
+            android:clickable="true"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+
+        <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:duplicateParentState="true"
+                android:clickable="false"
+                android:scaleType="fitXY"
+                android:background="@drawable/news_selector_background"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:clickable="false"
+                android:text="@string/bottom_title_status"
+                android:textColor="@color/bottom_title_text_color"/>
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/bottom_map_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_weight="1">
-
-        <ImageButton
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:duplicateParentState="true"
-            android:clickable="false"
-            android:scaleType="fitXY"
-            android:background="@drawable/read_selector_background"/>
-        <TextView
+            android:id="@+id/bottom_map_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:duplicateParentState="true"
-            android:clickable="false"
-            android:text="@string/bottom_title_map_string"
-            android:textColor="@color/bottom_title_text_color"/>
+            android:clickable="true"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+
+        <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:duplicateParentState="true"
+                android:clickable="false"
+                android:scaleType="fitXY"
+                android:background="@drawable/read_selector_background"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:clickable="false"
+                android:text="@string/bottom_title_map_string"
+                android:textColor="@color/bottom_title_text_color"/>
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/bottom_discovery_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_weight="1">
-
-        <ImageButton
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:duplicateParentState="true"
-            android:clickable="false"
-            android:scaleType="fitXY"
-            android:background="@drawable/video_selector_background" />
-        <TextView
+            android:id="@+id/bottom_discovery_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:duplicateParentState="true"
-            android:clickable="false"
-            android:text="@string/bottom_title_discovery_string"
-            android:textColor="@color/bottom_title_text_color"/>
+            android:clickable="true"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+
+        <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:duplicateParentState="true"
+                android:clickable="false"
+                android:scaleType="fitXY"
+                android:background="@drawable/video_selector_background"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:clickable="false"
+                android:text="@string/bottom_title_discovery_string"
+                android:textColor="@color/bottom_title_text_color"/>
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/bottom_research_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_weight="1">
-
-        <ImageButton
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:duplicateParentState="true"
-            android:clickable="false"
-            android:scaleType="fitXY"
-            android:background="@drawable/lamp_selector_background" />
-        <TextView
+            android:id="@+id/bottom_research_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:duplicateParentState="true"
-            android:clickable="false"
-            android:text="@string/bottom_title_research_string"
-            android:textColor="@color/bottom_title_text_color"/>
+            android:clickable="true"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+
+        <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:duplicateParentState="true"
+                android:clickable="false"
+                android:scaleType="fitXY"
+                android:background="@drawable/lamp_selector_background"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:clickable="false"
+                android:text="@string/bottom_title_research_string"
+                android:textColor="@color/bottom_title_text_color"/>
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/bottom_my_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_weight="1">
-
-        <ImageButton
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:duplicateParentState="true"
-            android:clickable="false"
-            android:scaleType="fitXY"
-            android:background="@drawable/pc_selector_background" />
-        <TextView
+            android:id="@+id/bottom_my_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:duplicateParentState="true"
-            android:clickable="false"
-            android:text="@string/bottom_title_my_string"
-            android:textColor="@color/bottom_title_text_color"/>
+            android:clickable="true"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+
+        <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:duplicateParentState="true"
+                android:clickable="false"
+                android:scaleType="fitXY"
+                android:background="@drawable/pc_selector_background"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:clickable="false"
+                android:text="@string/bottom_title_my_string"
+                android:textColor="@color/bottom_title_text_color"/>
     </LinearLayout>
 </LinearLayout>

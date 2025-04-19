@@ -3,7 +3,6 @@ apply plugin: 'com.android.application'
 android {
     namespace 'com.weng'
     compileSdkVersion 35
-    buildToolsVersion '29.0.2'
     defaultConfig {
         targetSdkVersion 34
         minSdkVersion 21
@@ -14,6 +13,14 @@ android {
     lintOptions {
         abortOnError false
     }
+
+    sourceSets {
+        main.res.srcDirs = [
+                "src/main/res"
+//                ,"src/main/res/layout/fracture_layout"
+        ]
+    }
+
 
 }
 

@@ -42,7 +42,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
         this.newsLayout.setSelected(true);
         mFragments = new Fragment[5];
         this.fragmentManager = this.getFragmentManager();
-        mFragments[0] = fragmentManager.findFragmentById(R.id.fragement_gps_status);
+        mFragments[0] = fragmentManager.findFragmentById(R.id.fragement_status);
         mFragments[1] = fragmentManager.findFragmentById(R.id.fragement_map);
         mFragments[2] = fragmentManager.findFragmentById(R.id.fragement_discovery);
         mFragments[3] = fragmentManager.findFragmentById(R.id.fragement_research);

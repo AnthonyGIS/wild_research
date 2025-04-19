@@ -5,16 +5,18 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import com.weng.R;
 
 
 /**
- * Created by liyuanjing on 2015/9/28.
+ * Created by liyuanjing on 2015/10/21.
  */
-public class ReadFragment extends Fragment {
+public class ResearchFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.fp_read_fragment_main_layout,container,false);
+        View view=inflater.inflate(R.layout.fp_research_frag_layout,container,false);
         return view;
+
     }
 }

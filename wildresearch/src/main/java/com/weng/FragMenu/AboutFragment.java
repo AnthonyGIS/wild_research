@@ -28,9 +28,6 @@ import com.weng.gpstools.SettingActivity;
 
 
 
-/**
- * Created by liyuanjing on 2015/9/28.
- */
 public class AboutFragment extends Fragment implements View.OnClickListener,TestDialog.onTestListener {
 
     private String mstrName = "";
@@ -40,7 +37,7 @@ public class AboutFragment extends Fragment implements View.OnClickListener,Test
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.fp_pc_fragment_main_layout,container,false);
+        View view=inflater.inflate(R.layout.fp_me_frag_layout,container,false);
 
         return view;
     }

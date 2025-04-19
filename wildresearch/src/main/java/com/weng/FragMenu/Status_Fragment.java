@@ -40,7 +40,7 @@ import java.util.Iterator;
 
 
 
-public class GPS_Main_Fragment extends Fragment implements View.OnClickListener, CustomMenu.OnMenuItemSelectedListener {
+public class Status_Fragment extends Fragment implements View.OnClickListener, CustomMenu.OnMenuItemSelectedListener {
     /**
      * Called when the activity is first created.
      */
@@ -80,7 +80,7 @@ public class GPS_Main_Fragment extends Fragment implements View.OnClickListener,
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.fp_gps_main_layout,container,false);
+        View view=inflater.inflate(R.layout.fp_status_frag_layout,container,false);
 
         tv_lat = (TextView) view.findViewById(R.id.lat_value);
         tv_lon = (TextView)  view.findViewById(R.id.lon_value);

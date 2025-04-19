@@ -85,7 +85,7 @@ public class _del_MainActivity extends Activity implements OnClickListener, OnMe
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fp_gps_main_layout);
+        setContentView(R.layout.fp_status_frag_layout);
 
         tv_lat = (TextView) findViewById(R.id.lat_value);
         tv_lon = (TextView) findViewById(R.id.lon_value);

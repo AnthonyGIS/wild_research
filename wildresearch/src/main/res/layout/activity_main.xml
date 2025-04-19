@@ -1,44 +1,44 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
+              xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical">
 
     <fragment
-            android:id="@+id/fragement_gps_status"
-            android:name="com.weng.FragMenu.GPS_Main_Fragment"
+            android:id="@+id/fragement_status"
+            android:name="com.weng.FragMenu.Status_Fragment"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1" tools:layout="@layout/fp_status_frag_layout"/>
 
     <fragment
             android:id="@+id/fragement_map"
-            android:name="com.weng.FragMenu.ReadFragment"
+            android:name="com.weng.FragMenu.MapFragment"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1"/>
 
     <!-- vido, pic, map path share with geolocation -->
     <fragment
             android:id="@+id/fragement_discovery"
-            android:name="com.weng.FragMenu.MediaFragment"
+            android:name="com.weng.FragMenu.DiscoveryFragment"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1"/>
 
     <!-- todos, tasks, and task notes -->
     <fragment
             android:id="@+id/fragement_research"
-            android:name="com.weng.FragMenu.DiscoveryFragment"
+            android:name="com.weng.FragMenu.ResearchFragment"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1"/>
 
     <fragment
             android:id="@+id/fragement_my"
             android:name="com.weng.FragMenu.AboutFragment"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1"/>
 
     <include layout="@layout/bottom_title_layout"/>
 

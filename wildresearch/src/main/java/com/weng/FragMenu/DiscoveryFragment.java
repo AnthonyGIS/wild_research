@@ -9,14 +9,11 @@ import android.view.ViewGroup;
 import com.weng.R;
 
 
-/**
- * Created by liyuanjing on 2015/10/21.
- */
+
 public class DiscoveryFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.fp_lamp_fragment_main_layout,container,false);
+        View view=inflater.inflate(R.layout.fp_discovery_frag_layout,container,false);
         return view;
-
     }
 }
