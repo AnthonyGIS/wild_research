@@ -6,7 +6,7 @@
 
     <!--GPS Status-->
     <LinearLayout
-        android:id="@+id/bottom_new_layout"
+        android:id="@+id/bottom_status_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
@@ -26,12 +26,12 @@
             android:layout_height="wrap_content"
             android:duplicateParentState="true"
             android:clickable="false"
-            android:text="@string/bottom_title_news_string"
+            android:text="@string/bottom_title_status"
             android:textColor="@color/bottom_title_text_color"/>
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/bottom_read_layout"
+        android:id="@+id/bottom_map_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
@@ -51,12 +51,12 @@
             android:layout_height="wrap_content"
             android:duplicateParentState="true"
             android:clickable="false"
-            android:text="@string/bottom_title_read_string"
+            android:text="@string/bottom_title_map_string"
             android:textColor="@color/bottom_title_text_color"/>
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/bottom_video_layout"
+        android:id="@+id/bottom_discovery_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
@@ -76,12 +76,12 @@
             android:layout_height="wrap_content"
             android:duplicateParentState="true"
             android:clickable="false"
-            android:text="@string/bottom_title_video_string"
+            android:text="@string/bottom_title_discovery_string"
             android:textColor="@color/bottom_title_text_color"/>
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/bottom_lamp_layout"
+        android:id="@+id/bottom_research_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
@@ -101,12 +101,12 @@
             android:layout_height="wrap_content"
             android:duplicateParentState="true"
             android:clickable="false"
-            android:text="@string/bottom_title_lamp_string"
+            android:text="@string/bottom_title_research_string"
             android:textColor="@color/bottom_title_text_color"/>
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/bottom_pc_layout"
+        android:id="@+id/bottom_my_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
@@ -126,7 +126,7 @@
             android:layout_height="wrap_content"
             android:duplicateParentState="true"
             android:clickable="false"
-            android:text="@string/bottom_title_pc_string"
+            android:text="@string/bottom_title_my_string"
             android:textColor="@color/bottom_title_text_color"/>
     </LinearLayout>
 </LinearLayout>

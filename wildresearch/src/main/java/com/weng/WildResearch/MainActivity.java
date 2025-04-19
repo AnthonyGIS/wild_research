@@ -29,11 +29,11 @@ public class MainActivity extends Activity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        this.newsLayout = (LinearLayout) findViewById(R.id.bottom_new_layout);
-        this.readLayout = (LinearLayout) findViewById(R.id.bottom_read_layout);
-        this.videoLayout = (LinearLayout) findViewById(R.id.bottom_video_layout);
-        this.lampLayout = (LinearLayout) findViewById(R.id.bottom_lamp_layout);
-        this.pcLayout = (LinearLayout) findViewById(R.id.bottom_pc_layout);
+        this.newsLayout = (LinearLayout) findViewById(R.id.bottom_status_layout);
+        this.readLayout = (LinearLayout) findViewById(R.id.bottom_map_layout);
+        this.videoLayout = (LinearLayout) findViewById(R.id.bottom_discovery_layout);
+        this.lampLayout = (LinearLayout) findViewById(R.id.bottom_research_layout);
+        this.pcLayout = (LinearLayout) findViewById(R.id.bottom_my_layout);
         this.newsLayout.setOnClickListener(this);
         this.readLayout.setOnClickListener(this);
         this.videoLayout.setOnClickListener(this);
@@ -42,11 +42,11 @@ public class MainActivity extends Activity implements View.OnClickListener{
         this.newsLayout.setSelected(true);
         mFragments = new Fragment[5];
         this.fragmentManager = this.getFragmentManager();
-        mFragments[0] = fragmentManager.findFragmentById(R.id.fragement_news);
-        mFragments[1] = fragmentManager.findFragmentById(R.id.fragement_read);
-        mFragments[2] = fragmentManager.findFragmentById(R.id.fragement_video);
-        mFragments[3] = fragmentManager.findFragmentById(R.id.fragement_lamp);
-        mFragments[4] = fragmentManager.findFragmentById(R.id.fragement_pc);
+        mFragments[0] = fragmentManager.findFragmentById(R.id.fragement_gps_status);
+        mFragments[1] = fragmentManager.findFragmentById(R.id.fragement_map);
+        mFragments[2] = fragmentManager.findFragmentById(R.id.fragement_discovery);
+        mFragments[3] = fragmentManager.findFragmentById(R.id.fragement_research);
+        mFragments[4] = fragmentManager.findFragmentById(R.id.fragement_my);
         fragmentTransaction = fragmentManager.beginTransaction().hide(mFragments[0]).hide(mFragments[1]).hide(mFragments[2]).hide(mFragments[3]).hide(mFragments[4]);
         fragmentTransaction.show(mFragments[0]).commit();
 
@@ -58,7 +58,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
         fragmentTransaction = fragmentManager.beginTransaction().hide(mFragments[0]).hide(mFragments[1]).hide(mFragments[2]).hide(mFragments[3]).hide(mFragments[4]);
 
 		int id = v.getId();
-		if (id == R.id.bottom_new_layout) {
+		if (id == R.id.bottom_status_layout) {
 			this.newsLayout.setSelected(true);
 			this.readLayout.setSelected(false);
 			this.videoLayout.setSelected(false);
@@ -66,7 +66,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
 			this.pcLayout.setSelected(false);
 			fragmentTransaction.show(mFragments[0]).commit();
 		}
-		else if (id == R.id.bottom_read_layout) {
+		else if (id == R.id.bottom_map_layout) {
 			this.newsLayout.setSelected(false);
 			this.readLayout.setSelected(true);
 			this.videoLayout.setSelected(false);
@@ -74,7 +74,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
 			this.pcLayout.setSelected(false);
 			fragmentTransaction.show(mFragments[1]).commit();
 		}
-		else if (id == R.id.bottom_video_layout) {
+		else if (id == R.id.bottom_discovery_layout) {
 			this.newsLayout.setSelected(false);
 			this.readLayout.setSelected(false);
 			this.videoLayout.setSelected(true);
@@ -82,7 +82,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
 			this.pcLayout.setSelected(false);
 			fragmentTransaction.show(mFragments[2]).commit();
 		}
-		else if (id == R.id.bottom_lamp_layout) {
+		else if (id == R.id.bottom_research_layout) {
 			this.newsLayout.setSelected(false);
 			this.readLayout.setSelected(false);
 			this.videoLayout.setSelected(false);
@@ -90,7 +90,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
 			this.pcLayout.setSelected(false);
 			fragmentTransaction.show(mFragments[3]).commit();
 		}
-		else if (id == R.id.bottom_pc_layout) {
+		else if (id == R.id.bottom_my_layout) {
 			this.newsLayout.setSelected(false);
 			this.readLayout.setSelected(false);
 			this.videoLayout.setSelected(false);

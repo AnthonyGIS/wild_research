@@ -60,7 +60,7 @@ public class GPS_Main_Fragment extends Fragment implements View.OnClickListener,
     private TextView tv_high;//海拔
     private TextView tv_direct;//方向
     private TextView tv_speed;//速度
-    //	private TextView starCount;// 搜星个数
+    private TextView tv_star_cnt;// 搜星个数
     private TextView tv_gps_time;
     private TextView tv_gps_type;
     private TextView tv_db_status;
@@ -220,7 +220,7 @@ public class GPS_Main_Fragment extends Fragment implements View.OnClickListener,
             this.tv_lon.setText(String.format("%.6f", cdata.getLongitude()));
             this.tv_high.setText(String.format("%.2f m", cdata.getHigh()));
             this.tv_direct.setText(String.format("%.2f°", cdata.getDirect()));
-            this.tv_speed.setText(String.format("%.2f m/s (%5.2f km/h)", cdata.getSpeed(),cdata.getSpeed()*3.6));
+            this.tv_speed.setText(String.format("%.2f m/s (%4.1f km/h)", cdata.getSpeed(),cdata.getSpeed()*3.6));
             this.tv_gps_time.setText(String.format("%s", cdata.getGpsTime()));
             this.tv_gps_type.setText(String.format("%d", cdata.getInfoType()));
 

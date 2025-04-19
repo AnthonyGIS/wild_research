@@ -5,17 +5,17 @@
 
     <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="150dp"
+            android:layout_height="200dp"
             android:layout_alignParentBottom="true"
-            android:background="@drawable/video_black"
+            android:background="#C80FA8E1"
             android:orientation="vertical"
             tools:ignore="UselessParent">
 
         <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="160dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="10dp"
                 android:orientation="horizontal">
 
             <!--导出-->

@@ -112,11 +112,11 @@
         > 热爱手指在键盘上跳舞的感觉，朋友们都叫我键盘动物。\n
         > 新浪微博：键盘动物CodeMonkey ( fangqing.fan@hotmail.com) \n
     </string>
-    <string name="bottom_title_news_string">GPS状态</string>
-    <string name="bottom_title_read_string">阅读</string>
-    <string name="bottom_title_video_string">视听</string>
-    <string name="bottom_title_lamp_string">发现</string>
-    <string name="bottom_title_pc_string">我</string>
+    <string name="bottom_title_status">STATUS</string>
+    <string name="bottom_title_map_string">MAP</string>
+    <string name="bottom_title_discovery_string">Discovery</string>
+    <string name="bottom_title_research_string">Research</string>
+    <string name="bottom_title_my_string">MY</string>
     <string name="action_settings">setting</string>
 
 
