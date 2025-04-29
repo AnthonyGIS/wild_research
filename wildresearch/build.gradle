@@ -15,10 +15,7 @@ android {
     }
 
     sourceSets {
-        main.res.srcDirs = [
-                "src/main/res"
-//                ,"src/main/res/layout/fracture_layout"
-        ]
+        main.res.srcDirs = ["src/main/res"]
     }
 
 

@@ -9,4 +9,5 @@ this project is gps application for wild research, and with the features:
 * dem add and display
 * offline map dn and display
 * share gps track path data for public users
+* 后台service
 * ...
